@@ -34,3 +34,25 @@ Part 2: Stub remaining GET and POST routes, planning mock restaurant data, drawi
         Secondary Color: #CBDFBD
         Highlighter Color: D4E09B
   
++------------------+---------+
+| Field            | Type    |
++------------------+---------+
+| _id              | ObjectID|
+| name             | String  |
+| city             | String  |
+| state            | String  |
+| cuisines         | String  |
+| pic              | String  |
+| rants            |         |
++------------------+---------+
+
++------------------+-------------+
+| Field            | Type        |
++------------------+-------------+
+| _id              | ObjectID    |
+| place_id         | ref(places) |
+| rant             | Boolean     |
+| rating           | Number      |
+| comment          | String      |
+| reviewer         | String      |
++------------------+-------------+
