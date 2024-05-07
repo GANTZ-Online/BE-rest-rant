@@ -9,12 +9,14 @@ app.get('/', (req, res) => {
     res.render('home')
   })
 
+app.use ('/places',require('./controllers/places'))
+
 app.get('*', (req, res) => {
   res.render('error404')
 })
 
 
- app.use ('/places',require('./controllers/places'))
+ 
   
 // GET /places
 // app.get('/', (req, res) => {
