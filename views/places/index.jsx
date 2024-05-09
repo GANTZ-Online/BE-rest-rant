@@ -33,5 +33,7 @@ function index (data) {
   )
   }
   
+  r
+  
   module.exports = index; 
   
