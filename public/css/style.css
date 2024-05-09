@@ -2,4 +2,12 @@ h1 {
     text-align: center;
     color: cornflowerblue;
   }
-  
+
+  img {
+    max-width: 100%; /* Set a maximum width relative to the viewport */
+    height: auto; /* Maintains aspect ratio */
+    float: left; /* Aligns the image to the left */
+    margin-right: 20px; /* Adds some space to the right of the image */
+}
+
+
