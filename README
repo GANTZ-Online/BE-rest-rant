@@ -64,3 +64,5 @@ Your places should have a name (string), city (string), state (string), cuisines
 | comment          | String      |
 | reviewer         | String      |
 +------------------+-------------+
+
+Part 6: Implementing delete functionality and adding a DELETE route
