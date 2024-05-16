@@ -8,11 +8,11 @@ function edit_form(data) {
         <div className="row">
           <div className="form-group col-sm-6">
             <label htmlFor="name">Place Name</label>
-            <input id="name" ... />
+            <input id="name"/>
           </div>
           <div className="form-group col-sm-6">
             <label htmlFor="pic">Place Picture</label>
-            <input id="pic" ... />
+            <input id="pic"/>
           </div>
         </div>
         {/* Additional form elements can go here */}
