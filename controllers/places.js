@@ -146,9 +146,22 @@ router.get('/:id/edit', (req, res) => {
   res.send('GET edit form stub')
 })
 
-router.post('/:id/rant', (req, res) => {
-  res.send('GET /places/:id/rant stub')
+router.post('/', (req, res) => {
+  if (!req.body.pic) {
+    // Default image if one is not provided
+    req.body.pic = 'http://placekitten.com/400/400'
+  }
+
+  db.Place.create(req.body)
+  .then(() => {
+      res.redirect('/places')
+  })
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
 })
+
 
 router.delete('/:id/rant/:rantId', (req, res) => {
     res.send('GET /places/:id/rant/:rantId stub')
