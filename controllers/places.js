@@ -92,6 +92,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../models');
+const places = require ('../models/places.js')
 
 router.get('/', (req, res) => {
     db.Place.find()
